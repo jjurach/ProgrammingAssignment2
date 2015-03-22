@@ -8,7 +8,8 @@ dumpMatrix <- function(x, name="") {
 
 #matrix <- matrix(1:4, nrow=2)
 #matrix <- matrix(-3:5, nrow=3)
-matrix <- matrix(rexp(9, rate=1), ncol=3)
+ncol <- 10 
+matrix <- matrix(rexp(ncol*ncol, rate=1), ncol=ncol)
 
 cacheMatrix <- makeCacheMatrix(matrix)
 #cacheMatrix$set(matrix)
